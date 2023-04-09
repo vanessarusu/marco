@@ -1,0 +1,32 @@
+@import './theme/breakpoints';
+@import './theme/typography';
+@import './theme/colorswatch';
+@import './theme/utils';
+
+@import './components/header';
+@import './components/product-sliders';
+@import './components/resources';
+@import './components/contact-form';
+@import './components/shop';
+
+@import './components/dealers-dashboard';
+
+
+.down-arrow {
+    .fl-icon-wrap {
+        display: block;
+        .fl-icon {
+            display: block;
+            float: none;
+            
+            i {
+                float: none;
+            }
+        }
+        .fl-icon-text {
+            padding-left: 0;
+            margin-top: 8px;
+            display: block;
+        }
+    }
+}

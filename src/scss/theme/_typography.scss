@@ -1,0 +1,84 @@
+:root {
+    --sans-serif: 'Overpass', sans-serif;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, div, li, section, span, a, button, input, blockquote {
+    font-family: var(--sans-serif);
+}
+
+h1, h1 span {
+    font-size: clamp(30px, 8.5vw, 140px) !important;
+}
+h2, 
+h2 span {
+    font-size: clamp(24px, 3vw, 45px);
+}
+
+.h2-samll h2,
+.h2-small, .h2-small h2 span {
+    font-size: clamp(20px, 2.5vw, 32px);
+}
+
+h3,
+h3 span {
+    font-size: clamp(18px, 2.5vw, 45px);
+}
+
+.h3-small h3 span {
+    font-size: clamp(20px, 2vw, 32px);
+    line-height: 1.4;
+    display: block;
+}
+
+.fl-button-wrap span {
+    font-size: clamp(15px, 1.6vw, 18px);
+}
+
+p, span, li {
+    font-size: clamp(15px, 1.6vw, 22px);
+}
+
+footer h3 span {
+    font-size: clamp(16px, 2vw, 18px);
+}
+
+footer a p {
+    font-size: clamp(16px, 1.6vw, 19px);
+}
+
+.wp-core-ui h1 {
+    font-size: 22px !important;
+}
+
+
+h1 span.red-bg {
+    background: var(--brand-red);
+    padding: 2rem 2.2rem 0;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    line-height: 1;
+
+    &:after {
+        content: '';
+        width: 2.2rem;
+        height: 100%;
+        background: url('../../dist/images/greydotpattern.jpg') center center no-repeat;
+        background-size: cover;
+        display: block;
+        z-index: 99;
+        position: absolute;
+        right: -2.2rem;
+        top: 0;
+    }
+}
+
+a.fl-button {
+    transition: all 0.15s ease-in-out;
+}
+
+a.fl-button,
+a.fl-button:hover, 
+a.fl-button:focus {
+    border: 0 !important;
+}

@@ -1,0 +1,198 @@
+@media (max-width: $tablet) {
+    header {
+        .fl-menu-mobile-flyout {
+
+            button.fl-menu-mobile-close {
+                i {
+                    color: white;
+                    font-size: 20px;
+                    padding-left: 20px;
+                    padding-top: 20px;
+
+                }
+            }
+            ul.menu {
+                margin-top: 100px;
+
+                li.menu-item {
+                    padding: 2rem;
+                }
+            }
+
+            ul.sub-menu {
+                margin-top: 20px;
+                li.menu-item {
+                    padding: 2rem 1rem;
+                }
+            }
+
+            .fl-has-submenu-container {
+                a {
+                    &:after {
+                        content: '+';
+                        display: block;
+                        position: absolute;
+                        right: 8px;
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+    ul.sub-menu {
+        margin-left: -22px;
+        li {
+            a {
+                border-bottom: 1px solid #707070;
+                transition: all 0.2s ease-in-out;
+                
+                &:hover {
+                    background: black;
+                }
+        
+            }
+
+            &:first-of-type {
+                a {
+                    border-top: 1px solid #707070;
+                }
+            }
+        }
+    }
+    li.custom-solutions-hover {
+        &:after {
+            content: 'Custom Product Development';
+            display: block;
+            position: absolute;
+            right: -22px;
+            bottom: 10px;
+            color: white;
+            font-size: 10.8px;
+            width: 120%;
+            font-weight: 600;
+            opacity: 0;
+        }
+        &:hover {
+
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+
+    .main-navigation {
+        > .fl-row-content-wrap {
+            padding-bottom: 0;
+        }
+    }
+}
+
+// Main Header Styles 
+
+
+
+.main-navigation {
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.4);
+    position: relative;
+}
+
+
+#userNav,
+#menu-2023-top-bar-menu {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    gap: 2rem;
+    @media (max-width: $tablet) {
+        gap: 1rem;
+    }
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 0;
+
+    li {
+        list-style: none;
+        a, span {
+            color: white;
+            font-size: 14px;
+
+            @media (max-width: $tablet) {
+                font-size: 14px;
+                line-height: 1;
+            }
+            text-transform: uppercase;
+        }
+    }
+
+    .nav-icon {
+        a {
+            font-size: 0px !important;
+
+            &:after {
+                height: 20px;
+                width: 20px;
+                content: '';
+                display: block;
+                margin-top: -38px;
+                transition: 0.2s ease-in-out;
+            }
+
+            &:hover {
+                &:after {
+                    opacity: 0.4;
+                }
+            }
+        }
+
+        &.facebook a:after {
+            background: url(http://localhost:8888/marco/wp-content/uploads/2023/02/facebook-icon.svg) center center no-repeat;
+            margin-left: 8px;
+        }
+
+        &.instagram a:after {
+            background: url(http://localhost:8888/marco/wp-content/uploads/2023/02/instagram-icon.svg) center center no-repeat;
+        }
+
+        &.twitter a:after {
+            background: url(http://localhost:8888/marco/wp-content/uploads/2023/02/twitter-icon.svg) center center no-repeat;
+        }  
+        
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+}
+
+.navigation-primary {
+    @media (max-width: $desktop) {
+        ul.menu {
+            justify-content: space-between !important;
+            width: 100%;
+            a {
+                padding: 0;
+            }
+        }
+    }
+    ul.menu li a {
+        @media (max-width: $desktop) {
+            padding: 0;
+        }
+    }
+
+    .fl-menu.fl-menu-responsive-toggle-large-mobile {
+        @media (max-width: $desktop) {
+            position: absolute;
+            right: 20px;
+            top: 40px;
+            border: 1px solid white;
+            padding: 20px 28px 16px;
+
+            button {
+                padding: 0;
+            }
+        }
+    }
+}

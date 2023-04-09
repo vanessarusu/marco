@@ -1,0 +1,17 @@
+.contact-form {
+    .gform_button {
+        margin-left: 40px;
+    }
+    @media(max-width: $tablet) {
+        .uabb-gf-style {
+            padding: 0;
+        }
+        ul {
+            padding-left: 0;
+        }
+        .gform_button {
+            margin-left: 0px;
+        }
+        
+    }
+}

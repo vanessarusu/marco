@@ -1,0 +1,345 @@
+.custom-product-slick-slider {
+    margin-left: -40px;
+
+  .infield-slider .slide,
+  .track-materials-slider .slide,
+  .conditioners-slider .slide {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 38% 62%;
+  }
+
+  .batters-box-slider {
+    .slide {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 38% 62%;
+
+        .slide-content {
+            p, ul {
+                margin-bottom: 30px;
+            }
+        }
+
+        .image-inner {
+            margin-bottom: 210px;
+            img {
+                min-height: 612px;
+                object-fit: cover;
+            }
+        }
+    }
+  }
+
+    .image-inner {
+        margin-bottom: 210px;
+
+        img {
+            min-height: 612px;
+            object-fit: cover;
+        }
+    }
+
+    .slide-content {
+        position: relative;
+        z-index: 1000;
+        padding-left: clamp(20px, 5vw, 96px);
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+
+
+
+      h2 {
+        margin-top: 60px;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+      }
+
+      h3 {
+        font-size: clamp(16px, 1.4vw, 22px);
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+
+      p,
+      li,
+      span {
+        font-weight: 300;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        ul {
+          margin: 0;
+          padding: 0;
+
+          li {
+            list-style: none;
+            margin: 4px 0;
+          }
+        }
+      }
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+
+        p {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        img {
+            margin: 0;
+        }
+      }
+    }
+
+  a.btn-primary {
+    background: var(--brand-red);
+    padding: 20px 40px 16px;
+    color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    position: relative;
+    z-index: 1000;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    display: inline-block;
+  }
+
+  .slider-nav-container {
+
+    .thumb-container {
+        background: #E2DFDF;
+        margin: 0 auto;
+        width: 80%;
+        border-right: 4px solid white;
+            border-left: 4px solid white;
+
+        .slick-track {
+
+            img {
+                min-height: 210px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .infield-slider-nav,
+    .batters-box-slider-nav,
+    .track-materials-slider-nav,
+    .conditioners-slider-nav  {
+
+        .slick-track {
+            justify-content: center;
+        }
+
+        .slick-slide {
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+            border-right: 4px solid white;
+            border-left: 4px solid white;
+
+            &:not(.slick-current) img {
+                opacity: 0.5;
+            }
+        }
+    }
+  }
+}
+
+.slider-container {
+    position: relative;
+}
+
+.slider-nav-container {
+    position: absolute;
+    top: 620px;
+    left: 0;
+    right: 0;
+    width: 38%;
+    // width: 30%;
+    background: #E2DFDF;
+}
+
+.slick-prev {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @media (max-width: 1500px) {
+        left: 0;
+        padding: 0;
+    }
+}
+
+.slick-next {
+    position: absolute;
+    bottom: 0;
+    left: clamp(200px, 35%, 525px);
+
+    @media (max-width: 1500px) {
+        left: 34%;
+        padding: 0;
+    }
+
+    z-index: 100;
+    display: none;
+}
+
+.slick-next,
+.slick-prev {
+    background: transparent;
+    border: none;
+    height: 180px;
+    z-index: 100;
+    padding: 0;
+
+    @media (max-width: 1200px) {
+        height: auto;
+        transform: translateY(-140%);
+    }
+
+    &:focus,
+    &:hover {
+        background: transparent;
+        border: none;
+        outline: none;
+        position: absolute;
+        bottom: 0;
+        top: unset;
+    }
+
+    i {
+        color: black;
+        font-size: 40px;
+        padding: 30px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        @media (max-width: 1500px) {
+            padding: 12px;
+        }
+
+    }    
+}
+
+
+@media screen and (max-width: 1024px) {
+    .custom-product-slick-slider {
+        margin-left: 0;
+        margin-top: 20px;
+
+        .infield-slider,
+        .track-materials-slider,
+        .batters-box-slider,
+        .track-materials-slider {
+            .slide {
+                display: block;
+                margin-bottom: 60px;
+
+                .image-inner {
+                    margin-bottom: 60px;
+
+                    img {
+                        width: 100%;
+                        max-height: 200px;
+                        min-height: 200px;
+                    }
+                }
+
+                .slide-content {
+                    padding: 0 100px;
+                    a.btn-primary {
+                        font-size: 14px;
+                    }
+                    a.btn-primary {
+                        font-size: 14px;
+                    }
+                }
+
+                
+            }
+        }
+
+        .slick-next,
+        .slick-prev {
+            width: 50px;
+            transform: translateY(0);
+            height: 100%;
+
+            i {
+                font-size: 26px;
+            }
+        }
+
+        .slick-next {
+            right: 0;
+            left: unset;
+        }
+    }
+
+    .slider-nav-container {
+        position: unset;
+        display: none;
+    }
+
+    .custom-product-slick-slider {
+        .slide-content {
+            h2 {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .custom-product-slick-slider {
+        .infield-slider,
+        .track-materials-slider,
+        .batters-box-slider,
+        .track-materials-slider {
+            .slide {
+                .slide-content {
+                    padding: 0 40px;
+                    .stats {
+                        display: block;
+
+                        h3 {
+                            margin-top: 40px;
+                        }
+                    }
+                    a.btn-primary {
+                        display: block;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .slick-prev,
+        .slick-next {
+            i {
+                padding: 0;
+            }
+        }
+
+        .slick-prev {
+            left: -20px;
+        }
+        .slick-next {
+            right: -20px;
+        }
+    } 
+}

@@ -1,0 +1,32 @@
+{
+  "name": "mar-co-clay-wordpress-theme",
+  "version": "1.0.0",
+  "description": "A WordPress theme for Mar-Co Clay",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --prod"
+  },
+  "author": "Vanessa Rusu",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/register": "^7.9.0",
+    "autoprefixer": "^9.8.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "yargs": "^15.4.1"
+  },
+  "dependencies": {
+    "babel-loader": "^8.1.0",
+    "webpack-stream": "^6.1.0"
+  }
+}

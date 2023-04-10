@@ -185,7 +185,7 @@
 .slick-next {
     position: absolute;
     bottom: 0;
-    left: clamp(200px, 35%, 525px);
+    left: clamp(200px, 35%, 545px);
 
     @media (max-width: 1500px) {
         left: 34%;

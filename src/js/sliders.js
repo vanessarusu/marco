@@ -42,7 +42,7 @@ const customSliders = (function($) {
                 asNavFor: '.custom-product-slick-slider .batters-box-slider',
                 dots: false,
                 arrows: false,
-                centerMode: true,
+                centerMode: false,
                 focusOnSelect: true
             });
         
@@ -64,7 +64,7 @@ const customSliders = (function($) {
                 asNavFor: '.custom-product-slick-slider .track-materials-slider',
                 dots: false,
                 arrows: false,
-                centerMode: true,
+                centerMode: false,
                 focusOnSelect: true
             });
         
@@ -85,7 +85,7 @@ const customSliders = (function($) {
                 asNavFor: '.custom-product-slick-slider .conditioners-slider',
                 dots: false,
                 arrows: false,
-                centerMode: true,
+                centerMode: false,
                 focusOnSelect: true
             });
         

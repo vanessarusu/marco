@@ -22,7 +22,7 @@ function gmct_remove_admin_bar() {
 }
 
 function gmct_admin_default_page() {
-  return '/dealer';
+  return bloginfo('url') . '/dealer';
 }
 
 add_filter('login_redirect', 'gmct_admin_default_page');

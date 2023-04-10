@@ -1,4 +1,4 @@
-@media (max-width: $tablet) {
+@media (max-width: $desktop) {
     header {
         .fl-menu-mobile-flyout {
 
@@ -16,6 +16,7 @@
 
                 li.menu-item {
                     padding: 2rem;
+                    text-align: left;
                 }
             }
 
@@ -41,7 +42,7 @@
     }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
     ul.sub-menu {
         margin-left: -22px;
         li {
@@ -106,7 +107,7 @@
     z-index: 10;
     display: flex;
     gap: 2rem;
-    @media (max-width: $tablet) {
+    @media (max-width: $desktop) {
         gap: 1rem;
     }
     align-items: center;
@@ -119,7 +120,7 @@
             color: white;
             font-size: 14px;
 
-            @media (max-width: $tablet) {
+            @media (max-width: $desktop) {
                 font-size: 14px;
                 line-height: 1;
             }
@@ -160,7 +161,7 @@
             background: url(http://localhost:8888/marco/wp-content/uploads/2023/02/twitter-icon.svg) center center no-repeat;
         }  
         
-        @media (max-width: $tablet) {
+        @media (max-width: $desktop) {
             display: none;
         }
     }

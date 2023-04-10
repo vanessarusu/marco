@@ -38,7 +38,7 @@ const customSliders = (function($) {
         
             $('.custom-product-slick-slider .batters-box-slider-nav').slick({
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 asNavFor: '.custom-product-slick-slider .batters-box-slider',
                 dots: false,
                 arrows: false,
@@ -60,7 +60,7 @@ const customSliders = (function($) {
         
             $('.custom-product-slick-slider .track-materials-slider-nav').slick({
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 asNavFor: '.custom-product-slick-slider .track-materials-slider',
                 dots: false,
                 arrows: false,
@@ -81,7 +81,7 @@ const customSliders = (function($) {
         
             $('.custom-product-slick-slider .conditioners-slider-nav').slick({
                 slidesToShow: 2,
-                slidesToScroll: 2,
+                slidesToScroll: 1,
                 asNavFor: '.custom-product-slick-slider .conditioners-slider',
                 dots: false,
                 arrows: false,

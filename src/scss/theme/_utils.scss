@@ -1,3 +1,5 @@
+// SITE UTILS
+
 .bg-pattern {
     .fl-row-content-wrap {
         background-size: 130px;
@@ -29,3 +31,22 @@ body:not(.fl-builder-edit) .half-width-image {
         }
     }
 }
+
+
+// WP UTILS 
+
+
+.fl-builder-blocks-section-content .fl-builder-block,
+.fl-builder-blocks-section-content .fl-builder-block span {
+    font-size: 13px;
+}
+
+.fl-builder--search-results-panel, .fl-builder-panel,
+.fl-builder--search-results-panel, .fl-builder-panel span {
+    font-size: 14px;
+}
+
+.fl-lightbox-header h1 {
+    font-size: 20px !important;
+}
+

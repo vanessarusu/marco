@@ -16,12 +16,13 @@ const customSliders = (function($) {
             
                 $('.custom-product-slick-slider .infield-slider-nav').slick({
                     slidesToShow: 2,
-                    slidesToScroll: 1,
+                    // slidesToScroll: 2,
                     asNavFor: '.custom-product-slick-slider .infield-slider',
                     dots: false,
                     arrows: false,
                     centerMode: false,
-                    focusOnSelect: true
+                    focusOnSelect: true,
+                    infinite: true
                 });
             }        
         
@@ -38,12 +39,13 @@ const customSliders = (function($) {
         
             $('.custom-product-slick-slider .batters-box-slider-nav').slick({
                 slidesToShow: 2,
-                slidesToScroll: 1,
+                // slidesToScroll: 2,
                 asNavFor: '.custom-product-slick-slider .batters-box-slider',
                 dots: false,
                 arrows: false,
                 centerMode: false,
-                focusOnSelect: true
+                focusOnSelect: true,
+                infinite: true
             });
         
         
@@ -60,12 +62,14 @@ const customSliders = (function($) {
         
             $('.custom-product-slick-slider .track-materials-slider-nav').slick({
                 slidesToShow: 2,
-                slidesToScroll: 1,
+                // slidesToScroll: 2,
                 asNavFor: '.custom-product-slick-slider .track-materials-slider',
                 dots: false,
                 arrows: false,
                 centerMode: false,
-                focusOnSelect: true
+                focusOnSelect: true,
+                infinite: true,
+                autoplay: true
             });
         
         
@@ -81,12 +85,12 @@ const customSliders = (function($) {
         
             $('.custom-product-slick-slider .conditioners-slider-nav').slick({
                 slidesToShow: 2,
-                slidesToScroll: 1,
                 asNavFor: '.custom-product-slick-slider .conditioners-slider',
                 dots: false,
                 arrows: false,
                 centerMode: false,
-                focusOnSelect: true
+                focusOnSelect: true,
+                infinite: true,
             });
         
         

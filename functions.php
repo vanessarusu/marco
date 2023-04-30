@@ -69,17 +69,6 @@ include_once( get_stylesheet_directory() . '/framework/lib/acf/brochures.php' );
 include_once( get_stylesheet_directory() . '/framework/lib/shortcodes/brochure_listing.php' );
 
 
-
-
-// if( is_page(1078) ){ // page ID or page slug here
-//     add_action( 'wp_enqueue_scripts', 'quote_scripts' );
-// }
-
-// function quote_scripts() {
-//     wp_enqueue_script( '_quotes', get_stylesheet_directory_uri() . '/js/script-quotes.js', array(), '1.0.0', true );
-// }
-
-
 function topbar_header_nav() {
     ob_start();
     get_template_part('/framework/templates/shortcodes/shortcodes', 'nav' );
@@ -88,3 +77,5 @@ function topbar_header_nav() {
 }
 
 add_shortcode('topbar_header', 'topbar_header_nav');
+
+add_filter( 'big_image_size_threshold', '__return_false' );

@@ -259,7 +259,9 @@
 // }
 
 .slick-prev, .slick-next,
-.slick-prev:focus, .slick-next:focus {
+.slick-prev:focus, .slick-next:focus,
+.slick-prev:focus-within, .slick-next:focus-within,
+.slick-prev:active, .slick-next:active {
     background: transparent;
     position: absolute;
     top: 0;
@@ -438,4 +440,4 @@
             max-width: 1000px;
         }
     }
-}
+} 

@@ -86,7 +86,7 @@ add_action( 'init', 'register_my_menus' );
 
 // Add Editor Style
 add_editor_style( get_stylesheet_directory_uri() . '/build/css/styles.min.css' );
-add_editor_style( get_stylesheet_directory_uri() . '/build/css/editor.min.css' );
+// add_editor_style( get_stylesheet_directory_uri() . '/build/css/editor.min.css' );
 
 
 // Remove emoji code from header

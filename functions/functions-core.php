@@ -85,7 +85,7 @@ add_action( 'init', 'register_my_menus' );
 // Removed by 10AM. Breaks product image in Woo 3.x.
 
 // Add Editor Style
-add_editor_style( get_stylesheet_directory_uri() . '/build/css/styles.min.css' );
+// add_editor_style( get_stylesheet_directory_uri() . '/build/css/styles.min.css' );
 // add_editor_style( get_stylesheet_directory_uri() . '/build/css/editor.min.css' );
 
 

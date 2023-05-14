@@ -11,7 +11,7 @@ $params = array(
 <ul id="userNav">
 <?php if ( is_user_logged_in() ) : ?>
     <li>
-        <a href="<?php bloginfo('url'); ?>" target="blank">/dealer"><span class="header-contact-text">Dealer Dashboard</span></a>
+        <a href="<?php bloginfo('url'); ?>/dealer" target="blank"><span class="header-contact-text">Dealer Dashboard</span></a>
     </li>
     <li>
         <a href="<?php echo wp_logout_url(); ?>"><span class="header-contact-text">Logout</span></a>

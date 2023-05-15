@@ -14,8 +14,6 @@ function gmct_brochure_listing($atts, $content = null) {
 		 'filter' => ''
 	), $atts ) );
 	
-	// $ret .= '<h2>Brochure Materials</h2>';
-
 	global $wp_query;
 
 	if ( $filter == '' || $filter == 'all' || $filter == 'advertising' ){
@@ -33,6 +31,7 @@ function gmct_brochure_listing($atts, $content = null) {
 
 		));
 
+		$ret .= '<h2>Brochure Materials</h2>';
 		$ret .= '<h3>Advertising</h3>';
 		$ret .= '<div class="resources-list">';
 		$ret .= meta_get_template_contents('/framework/templates/shortcodes/brochure', 'listing');

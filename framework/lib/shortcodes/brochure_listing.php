@@ -7,14 +7,14 @@
 /*
 [brochure_listing]
 */
-if( !function_exists( 'gmct_brochure_listing' ) ){
+if( !function_exists( 'gmct_brochure_listing' ) ) {
 function gmct_brochure_listing($atts, $content = null) {
 
 	extract( shortcode_atts( array(
 		 'filter' => ''
 	), $atts ) );
 	
-	$ret .= '<h2>Brochure Materials</h2>';
+	// $ret .= '<h2>Brochure Materials</h2>';
 
 	global $wp_query;
 

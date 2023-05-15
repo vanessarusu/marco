@@ -56,7 +56,7 @@ function gmct_brochure_listing($atts, $content = null) {
 			'order' => 'ASC'
 
 		));
-
+		$ret .= '<h2>Product Spec Data Sheets</h2>';
 		$ret .= '<h3>Specification Data</h3>';
 		$ret .= '<div class="resources-list">';
 		$ret .= meta_get_template_contents('/framework/templates/shortcodes/brochure', 'listing');
@@ -81,6 +81,7 @@ function gmct_brochure_listing($atts, $content = null) {
 
 		));
 		
+		$ret .= '<h2>Design Drawings</h2>';
 		$ret .= '<h3>Drawings</h3>';
 		$ret .= '<div class="resources-list">';
 		$ret .= meta_get_template_contents('/framework/templates/shortcodes/brochure', 'listing');

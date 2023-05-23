@@ -62,7 +62,6 @@ const customSliders = (function($) {
         
             $('.custom-product-slick-slider .track-materials-slider-nav').slick({
                 slidesToShow: 2,
-                // slidesToScroll: 2,
                 asNavFor: '.custom-product-slick-slider .track-materials-slider',
                 dots: false,
                 arrows: false,

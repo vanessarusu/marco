@@ -171,8 +171,8 @@ var quoteScripts = function quoteScripts($) {
         $(this).text('Loading...').addClass("loading");
         //ajax
         $.ajax({
-          url: "/wp-admin/admin-ajax.php",
-          // url: "http://localhost:8888/marco/",
+          // url: "/wp-admin/admin-ajax.php",
+          url: "http://localhost:8888/marco-june-4/wordpress/wp-admin/admin-ajax.php",
           type: "POST",
           data: d,
           success: function success(response) {

@@ -1,4 +1,5 @@
-<?php $qid = $_GET['qid']; ?>
+<?php $qid = $_GET['qid']; 
+print_r($_GET['qid']); ?>
 
 <div class="custom-container">
 

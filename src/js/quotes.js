@@ -56,15 +56,15 @@ const quoteScripts = (function($) {
                 $(this).text('Loading...').addClass("loading");
                 //ajax
                 $.ajax({
-                    url: "/wp-admin/admin-ajax.php",
-                    // url: "http://localhost:8888/marco/",
+                    // url: "/wp-admin/admin-ajax.php",
+                    url: "http://localhost:8888/marco/",
                     type: "POST",
                     data: d,
                     success: function(response){
                         console.log('in success' + response);
                         //$(this).text(t).removeClass("loading");
-                        window.location = "/quote/report/?qid=" + qid;
-                        // window.location = "http://localhost:8888/marco/quote/report/?qid=" + qid;
+                         // window.location = "/quote/report/?qid=" + qid;
+                         window.location = "http://localhost:8888/marco/quote/report/?qid=" + qid;
                     },
                     error: function(error){
                         console.log('in error: ' + JSON.stringify(error));

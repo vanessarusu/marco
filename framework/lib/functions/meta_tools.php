@@ -27,17 +27,17 @@ function excerpt_read_more_link($output) {
 }
 add_filter('excerpt_more', 'excerpt_read_more_link');
 
-add_filter( 'pre_get_posts' , 'search_exc_cats' );
+// add_filter( 'pre_get_posts' , 'search_exc_cats' );
 
-function search_exc_cats( $query ) {
-	if( $query->is_admin )
-		return $query;
-	if( $query->is_search ) {
-		//$query->set( 'category__not_in' , array( 1, 2, 3 ) ); // Example multiple cats
-		$query->set( 'category__not_in' , array( 5 ) ); // Single cat
-	}
-	return $query;
-}
+// function search_exc_cats( $query ) {
+// 	if( $query->is_admin )
+// 		return $query;
+// 	if( $query->is_search ) {
+// 		//$query->set( 'category__not_in' , array( 1, 2, 3 ) ); // Example multiple cats
+// 		$query->set( 'category__not_in' , array( 5 ) ); // Single cat
+// 	}
+// 	return $query;
+// }
 
 /* END META HELPER FUNCTIONS */
 

@@ -171,15 +171,15 @@ var quoteScripts = function quoteScripts($) {
         $(this).text('Loading...').addClass("loading");
         //ajax
         $.ajax({
-          // url: "/wp-admin/admin-ajax.php",
           url: "https://lwdgdev.ca/marco/wp-admin/admin-ajax.php",
+          // url: "http://localhost:8888/marco/",
           type: "POST",
           data: d,
           success: function success(response) {
             console.log('in success' + response);
             //$(this).text(t).removeClass("loading");
+            // window.location = "/quote/report/?qid=" + qid;
             window.location = "https://lwdgdev.ca/marco/quote/report/?qid=" + qid;
-            // window.location = "http://localhost:8888/marco/quote/report/?qid=" + qid;
           },
           error: function error(_error) {
             console.log('in error: ' + JSON.stringify(_error));

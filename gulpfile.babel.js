@@ -18,7 +18,7 @@ import livereload from 'gulp-livereload';
 const PRODUCTION = yargs.argv.prod;
 
 export const styles = () => {
-  return src(['src/scss/bundle.scss', 'src/scss/admin/admin.scss', '!dist/css/slick.css'])
+  return src(['src/scss/bundle.scss', 'src/scss/admin/admin.scss'])
     .pipe(gulpif(!PRODUCTION, sourcemaps.init()))
     .pipe(sass().on('error', sass.logError))
     .pipe(gulpif(PRODUCTION, postcss([ autoprefixer ])))
@@ -43,7 +43,7 @@ export const copy = () => {
 export const clean = () => del(['dist']);
 
 export const scripts = () => {
-  return src(['src/js/bundle.js', '!dist/js/slick.min.js'])
+  return src('src/js/bundle.js')
   .pipe(webpack({
     module: {
       rules: [

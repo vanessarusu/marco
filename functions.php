@@ -79,3 +79,5 @@ function topbar_header_nav() {
 add_shortcode('topbar_header', 'topbar_header_nav');
 
 add_filter( 'big_image_size_threshold', '__return_false' );
+
+remove_action('admin_notices', 'woothemes_updater_notice');

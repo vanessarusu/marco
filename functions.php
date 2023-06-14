@@ -81,3 +81,12 @@ add_shortcode('topbar_header', 'topbar_header_nav');
 add_filter( 'big_image_size_threshold', '__return_false' );
 
 remove_action('admin_notices', 'woothemes_updater_notice');
+
+function woo_special_order_product_notice() {
+    ob_start();
+    get_template_part('/framework/templates/shortcodes/shortcodes', 'special-order-notice' );
+    $content = ob_get_clean();
+    return $content;
+}
+
+add_shortcode('woo_special_order_product_notice', 'woo_special_order_product_notice');

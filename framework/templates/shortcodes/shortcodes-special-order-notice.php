@@ -1,4 +1,5 @@
-<?php if( is_cart() || is_checkout() ) {
+<?php 
+if( is_cart() || is_checkout() ) {
 
 $is_special_order = false;
 
@@ -44,6 +45,7 @@ if ( $is_special_order ) { ?>
 }
 		// Special Order Message
 		$terms = wp_get_post_terms( $post->ID, 'product_cat' );
+        print_r($terms);
 		foreach ( $terms as $term ) $categories[] = $term->slug;
 
 		if ( in_array( 'special-order', $categories ) ) {

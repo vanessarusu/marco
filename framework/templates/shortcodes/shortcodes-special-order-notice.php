@@ -45,8 +45,10 @@ if ( $is_special_order ) { ?>
 }
 		// Special Order Message
 		$terms = wp_get_post_terms( $post->ID, 'product_cat' );
-        print_r($terms);
+        // print_r($terms);
 		foreach ( $terms as $term ) $categories[] = $term->slug;
+        print_r($term);
+        print_r($slug);
 
 		if ( in_array( 'special-order', $categories ) ) {
 		?>

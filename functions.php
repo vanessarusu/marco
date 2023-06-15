@@ -90,3 +90,13 @@ function woo_special_order_product_notice() {
 }
 
 add_shortcode('woo_special_order_product_notice', 'woo_special_order_product_notice');
+
+
+function woo_special_order_product_notice_cart() {
+    ob_start();
+    get_template_part('/framework/templates/shortcodes/shortcodes', 'special-order-notice-cart' );
+    $content = ob_get_clean();
+    return $content;
+}
+
+add_shortcode('woo_special_order_product_notice_cart', 'woo_special_order_product_notice_cart');

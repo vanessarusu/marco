@@ -18,8 +18,8 @@ foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 if ( $is_special_order ) { ?>
 
     <section class="section-so-notice">
-        <div class="row">
-            <div class="col span-12">
+        <div>
+            <div>
                 <div class="wc-cart-so-notice">
 
                     <h1 class="required-red">Order Warning</h1>

@@ -16,7 +16,6 @@ const customSliders = (function($) {
             
                 $('.custom-product-slick-slider .infield-slider-nav').slick({
                     slidesToShow: 2,
-                    // slidesToScroll: 2,
                     asNavFor: '.custom-product-slick-slider .infield-slider',
                     dots: false,
                     arrows: false,
@@ -39,7 +38,6 @@ const customSliders = (function($) {
         
             $('.custom-product-slick-slider .batters-box-slider-nav').slick({
                 slidesToShow: 2,
-                // slidesToScroll: 2,
                 asNavFor: '.custom-product-slick-slider .batters-box-slider',
                 dots: false,
                 arrows: false,
@@ -67,8 +65,7 @@ const customSliders = (function($) {
                 arrows: false,
                 centerMode: false,
                 focusOnSelect: true,
-                infinite: true,
-                autoplay: true
+                infinite: true
             });
         
         

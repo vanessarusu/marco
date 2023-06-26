@@ -14,7 +14,7 @@ get_header();
 	</div>
 
 	<div class="col span_35 div-padding no-padding-top">
-		<img src="<?php echo get_template_directory_uri() . '/images/diagrams/warning_track_area/warning_track_area_diagram.gif' ; ?>" class="field-diagram" />
+		<img style="display:none;" src="<?php echo get_template_directory_uri() . '/images/diagrams/warning_track_area/warning_track_area_diagram.gif' ; ?>" class="field-diagram" />
 		<?php get_template_part('/framework/templates/quotes/quote', 'sidebar'); ?>
 
 	</div>

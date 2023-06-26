@@ -100,3 +100,17 @@ function woo_special_order_product_notice_cart() {
 }
 
 add_shortcode('woo_special_order_product_notice_cart', 'woo_special_order_product_notice_cart');
+
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(https://marcoclay.com/marco23/wp-content/uploads/2023/02/Mar-Co-Clay-Logo.svg);
+            height:98px;
+            width:166px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-bottom: 30px; 
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );

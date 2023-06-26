@@ -132,7 +132,7 @@ var quoteScripts = function quoteScripts($) {
       function GrabDiagramImage() {
         $('.view-diagram').each(function () {
           var imageGrab = $(this).attr('data-image');
-          $(this).append('<div class="tooltip"><img src="' + siteURL + '/wp-content/themes/bb-theme-child/dist/images/diagrams' + imageGrab + '" class="diagram-image" /></div>');
+          $(this).append('<div class="tooltip"><img src="' + siteURL + 'marco23/wp-content/themes/bb-theme-child/dist/images/diagrams' + imageGrab + '" class="diagram-image" /></div>');
         });
       }
       $('.print-total').on('click', function () {
@@ -171,7 +171,7 @@ var quoteScripts = function quoteScripts($) {
         $(this).text('Loading...').addClass("loading");
         //ajax
         $.ajax({
-          url: "https://marcoclay.com/wp-admin/admin-ajax.php",
+          url: "https://marcoclay.com/marco23/wp-admin/admin-ajax.php",
           // url: "http://localhost:8888/marco/",
           type: "POST",
           data: d,

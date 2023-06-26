@@ -39,7 +39,7 @@ const quoteScripts = (function($) {
                     var name = prompt('Enter a new name for the quote:', t);
                     if ( name !== null && name !== '' ){
                         //console.log("/quote/rename/?qid=" + qid + "&amp;qname=" + name);
-                        window.location = "https://marcoclay.com/marco23/quote/rename/?qid=" + qid + "&qname=" + name;
+                        window.location = "https://marcoclay.com/quote/rename/?qid=" + qid + "&qname=" + name;
                     }
             });
         
@@ -64,7 +64,7 @@ const quoteScripts = (function($) {
                         console.log('in success' + response);
                         //$(this).text(t).removeClass("loading");
                          // window.location = "/quote/report/?qid=" + qid;
-                         window.location = "https://marcoclay.com/marco23/quote/report/?qid=" + qid;
+                         window.location = "https://marcoclay.com/quote/report/?qid=" + qid;
                     },
                     error: function(error){
                         console.log('in error: ' + JSON.stringify(error));

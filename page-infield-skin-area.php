@@ -13,7 +13,7 @@ get_template_part('/framework/templates/quotes/quote', 'header'); ?>
 	</div>
 
 	<div class="col span_35 div-padding no-padding-top">
-		<img src="<?php echo get_template_directory_uri() . '/images/diagrams/infield_skin_area/infield_skin_area_diagram.gif' ; ?>" class="field-diagram" />
+		<img src="<?php echo get_stylesheet_directory_uri() . '/dist/images/diagrams/infield_skin_area/infield_skin_area_diagram.gif' ; ?>" class="field-diagram" />
 		<?php get_template_part('/framework/templates/quotes/quote', 'sidebar'); ?>
 
 	</div>

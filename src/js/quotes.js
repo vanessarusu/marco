@@ -11,7 +11,7 @@ const quoteScripts = (function($) {
             function GrabDiagramImage() {
                  $('.view-diagram').each(function(){
                     var imageGrab = $(this).attr('data-image');
-                    $(this).append('<div class="tooltip"><img src="' + siteURL  + 'marco23/wp-content/themes/bb-theme-child/dist/images/diagrams' + imageGrab + '" class="diagram-image" /></div>');
+                    $(this).append('<div class="tooltip"><img src="' + siteURL  + 'marco23/wp-content/themes/marco/dist/images/diagrams' + imageGrab + '" class="diagram-image" /></div>');
                  });
             }
         

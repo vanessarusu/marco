@@ -128,7 +128,7 @@ var quoteScripts = function quoteScripts($) {
   function initialize() {
     jQuery(document).ready(function ($) {
       // var siteURL = window.location.protocol + '//' + window.location.host;
-      var siteURL = 'https://marcoclay.com/marco23/';
+      var siteURL = 'https://marcoclay.com/';
       function GrabDiagramImage() {
         $('.view-diagram').each(function () {
           var imageGrab = $(this).attr('data-image');
@@ -157,7 +157,7 @@ var quoteScripts = function quoteScripts($) {
         var name = prompt('Enter a new name for the quote:', t);
         if (name !== null && name !== '') {
           //console.log("/quote/rename/?qid=" + qid + "&amp;qname=" + name);
-          window.location = "https://marcoclay.com/marco23/quote/rename/?qid=" + qid + "&qname=" + name;
+          window.location = "https://marcoclay.com/quote/rename/?qid=" + qid + "&qname=" + name;
         }
       });
       $('.build-report').on('click', function () {
@@ -171,7 +171,7 @@ var quoteScripts = function quoteScripts($) {
         $(this).text('Loading...').addClass("loading");
         //ajax
         $.ajax({
-          url: "https://marcoclay.com/marco23/wp-admin/admin-ajax.php",
+          url: "https://marcoclay.com/wp-admin/admin-ajax.php",
           // url: "http://localhost:8888/marco/",
           type: "POST",
           data: d,
@@ -179,7 +179,7 @@ var quoteScripts = function quoteScripts($) {
             console.log('in success' + response);
             //$(this).text(t).removeClass("loading");
             // window.location = "/quote/report/?qid=" + qid;
-            window.location = "https://marcoclay.com/marco23/quote/report/?qid=" + qid;
+            window.location = "https://marcoclay.com/quote/report/?qid=" + qid;
           },
           error: function error(_error) {
             console.log('in error: ' + JSON.stringify(_error));

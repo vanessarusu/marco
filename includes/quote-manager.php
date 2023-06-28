@@ -1079,7 +1079,7 @@ class GMCT_Marco_Quote_Manager {
 			if ($category == 'bulk'){
 				foreach ($cat as $material => $value) {
 			    	$totaltable .= "<tr><td>" . $material . "</td><td>" . $value . "</td></tr>";
-					$subtotalbulk .= $value;
+					$subtotalbulk .= floatval($value);
 					echo "subtotal - " . $subtotal . floatval($subtotal) . " | <br />";
 					echo "value - " . $value . floatval($value) . " | <br />";
 		    	}

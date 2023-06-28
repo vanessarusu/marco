@@ -1083,8 +1083,8 @@ class GMCT_Marco_Quote_Manager {
 					$value = floatval($value);
 					echo "value - " . floatval($value) . " - " . gettype($value) . " | <br />";
 					echo $subtotalbulk . " | <br />";
-					echo $subtotalbulk += floatval($value);
-					$subtotalbulk += floatval($value);
+					echo $subtotalbulk + floatval($value);
+					$subtotalbulk + $subtotalbulk + floatval($value);
 		    	}
 			}
     }

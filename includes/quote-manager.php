@@ -1067,7 +1067,7 @@ class GMCT_Marco_Quote_Manager {
 		$summarytext .= "</div>";
 
     /// This is for the total break down of all the materials
-    $subtotalbulk = '';
+    $subtotalbulk = floatval(0);
 
     $totaltable = "<div class='report-section-container totals'><div class='report-total'><b>TOTALS</b></div>\n";
 

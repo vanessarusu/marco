@@ -1080,8 +1080,8 @@ class GMCT_Marco_Quote_Manager {
 				foreach ($cat as $material => $value) {
 			    	$totaltable .= "<tr><td>" . $material . "</td><td>" . $value . "</td></tr>";
 					$subtotalbulk .= floatval($value);
-					echo "subtotal - " . $subtotalbulk . floatval($subtotalbulk) . " | <br />";
-					echo "value - " . $value . floatval($value) . " | <br />";
+					echo "subtotal - " . gettype($subtotalbulk) . " - " . floatval($subtotalbulk) . " | <br />";
+					echo "value - " . gettype($value) . " - " . floatval($value) . " | <br />";
 		    	}
 			}
     }

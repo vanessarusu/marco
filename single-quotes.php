@@ -1,5 +1,5 @@
 <?php
-  wp_redirect('/quote/modify/?qid=' . get_the_ID());
+  wp_redirect(bloginfo('url');'/quote/modify/?qid=' . get_the_ID());
   exit;
 ?>
 

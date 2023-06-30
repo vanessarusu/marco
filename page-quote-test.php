@@ -12,9 +12,9 @@ if ( $_GET['uid'] != '' ) {
 }
 // $user = wp_get_current_user();
 
-// if ( !is_a($user, 'WP_User') ){
-// 	$user = wp_get_current_user();
-// }
+if ( !is_a($user, 'WP_User') ){
+	$user = wp_get_current_user();
+}
 
 $quotes = \GMCT_Marco_Quote_Manager::get_my_quotes($user);
 

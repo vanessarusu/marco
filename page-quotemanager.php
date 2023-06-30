@@ -4,7 +4,8 @@ die('x');
 get_header();
 
 //\GMCT_Marco_Quote_Manager::duplicate_post(1115);
-
+echo('HIIIIIII QUEr/y VAR');
+print_r(get_query_var('uid'));
 // if ( $_GET['uid'] != '' ){
 	if ( get_query_var('uid')) {
 

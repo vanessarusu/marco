@@ -12,9 +12,9 @@ get_header();
 <div class="custom-container quote-report-page">
 	<div>
 
-		<h2>Quote Report </h2>
+		<h2>Material Calculator Report</h2>
 		<h4><?php echo get_the_title($qid); ?></h4>
-		<p>Created on: <?php echo Date('M d, Y - H:i:s', strtotime($q->post_date)); ?> <br/><small>* Quotes are valid for thirty (30) days from this date</small></p>
+		<p>Created on: <?php echo Date('M d, Y - H:i:s', strtotime($q->post_date)); ?></p>
 
 		<?php echo \GMCT_Marco_Quote_Manager::show_report( $qid, 'full', 1 ); ?>
 

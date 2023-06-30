@@ -5,9 +5,12 @@ get_header();
 
 //\GMCT_Marco_Quote_Manager::duplicate_post(1115);
 
-if ( $_GET['uid'] != '' ){
+// if ( $_GET['uid'] != '' ){
+	if ( get_query_var('uid')) {
 
-	$user = get_user_by('id', $_GET['uid']);
+	// $user = get_user_by('id', $_GET['uid']);
+	$user = get_query_var('uid');
+
 } else {
 	$user = wp_get_current_user();
 }

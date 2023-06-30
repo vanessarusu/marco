@@ -26,7 +26,7 @@ $quotes = \GMCT_Marco_Quote_Manager::get_my_quotes($user);
 	<div>
 
 	<div class="description">
-		<h2>Material Calculator</h2>
+		<h2>Material Calculator1</h2>
 		<p>Material Calculator is a tool to help you determine the quantity of product you will need for your next baseball diamond project.  Calculate how much of each material you need for an entire field including the infield skin, pitcher’s mound, home plate area, warning track.</p>
 		<a href="<?php bloginfo('url'); ?>/quote/create/" class="button no-print">New Material Calculation</a>
 	</div>

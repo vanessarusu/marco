@@ -4,17 +4,17 @@ get_header();
 
 //\GMCT_Marco_Quote_Manager::duplicate_post(1115);
 
-// if ( $_GET['uid'] != '' ) {
+if ( $_GET['uid'] != '' ) {
 
-// 	$user = get_user_by('id', $_GET['uid']);
-// } else {
-// 	$user = wp_get_current_user();
-// }
-$user = wp_get_current_user();
-
-if ( !is_a($user, 'WP_User') ){
+	$user = get_user_by('id', $_GET['uid']);
+} else {
 	$user = wp_get_current_user();
 }
+// $user = wp_get_current_user();
+
+// if ( !is_a($user, 'WP_User') ){
+// 	$user = wp_get_current_user();
+// }
 
 $quotes = \GMCT_Marco_Quote_Manager::get_my_quotes($user);
 
